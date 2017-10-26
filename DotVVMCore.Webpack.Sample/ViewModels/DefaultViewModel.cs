@@ -8,7 +8,7 @@ using DotVVM.Framework.ViewModel;
 
 namespace DotVVMCore.Webpack.Sample.ViewModels
 {
-    public class DefaultViewModel : DotvvmViewModelBase
+    public class DefaultViewModel : MainViewModel
     {
         
         public string Title { get; set; }

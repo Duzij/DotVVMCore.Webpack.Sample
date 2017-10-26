@@ -1,15 +1,12 @@
-@viewModel DotVVMCore.Webpack.Sample.ViewModels.DefaultViewModel, DotVVMCore.Webpack.Sample
+﻿@viewModel DotVVMCore.Webpack.Sample.ViewModels.DefaultViewModel, DotVVMCore.Webpack.Sample
+@masterPage  Views/main.dotmaster
 
-<!DOCTYPE html>
+<dot:Content ContentPlaceHolderID="MainContent">
+    <script src="/dist/default-script.js"></script>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+    <h1 ID="main-text">{{value: Title}}</h1>
 
-    <h1>{{value: Title}}</h1>
+    <dot:RouteLink RouteName="page2" Text="page 2"></dot:RouteLink>
+</dot:Content>
 
-</body>
-</html>
+

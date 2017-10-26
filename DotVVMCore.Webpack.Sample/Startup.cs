@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.SpaServices.Webpack;
 
 namespace DotVVMCore.Webpack.Sample
 {
@@ -39,6 +40,20 @@ namespace DotVVMCore.Webpack.Sample
             {
                 FileProvider = new Microsoft.Extensions.FileProviders.PhysicalFileProvider(env.WebRootPath)
             });
+
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+
+                app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions()
+                {
+                    HotModuleReplacement = true,
+                    HotModuleReplacementClientOptions = new Dictionary<string, string>{
+                   {"reload", "true"}
+                  }
+                });
+            }
+
         }
     }
 }

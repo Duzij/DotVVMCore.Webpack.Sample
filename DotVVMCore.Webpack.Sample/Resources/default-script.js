@@ -1,0 +1,1 @@
+﻿$().ready(function () { $("#main-text").css("color", "blue") });

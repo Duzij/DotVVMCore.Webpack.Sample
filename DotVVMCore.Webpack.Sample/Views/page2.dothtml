@@ -1,0 +1,10 @@
+﻿@viewModel DotVVMCore.Webpack.Sample.ViewModels.Page2ViewModel, DotVVMCore.Webpack.Sample
+@masterPage Views/main.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <script src="/dist/page2-script.js"></script>
+
+    <h1>Page 2</h1>
+
+</dot:Content>
+
