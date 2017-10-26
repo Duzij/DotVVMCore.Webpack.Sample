@@ -5,6 +5,8 @@
     <script src="/dist/page2-script.js"></script>
 
     <h1>Page 2</h1>
+    <p>Take a look at browser console.</p>
+    <dot:RouteLink RouteName="Default" Text="Back to main page"></dot:RouteLink>
 
 </dot:Content>
 

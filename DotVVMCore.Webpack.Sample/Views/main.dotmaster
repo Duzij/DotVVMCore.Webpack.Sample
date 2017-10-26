@@ -11,7 +11,9 @@
 </head>
 <body>
 
-    <dot:ContentPlaceHolder ID="MainContent" />
+    <main>
+        <dot:ContentPlaceHolder ID="MainContent" />
+    </main>
 
 </body>
 </html>

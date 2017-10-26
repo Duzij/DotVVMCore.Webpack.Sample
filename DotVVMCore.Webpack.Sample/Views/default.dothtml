@@ -6,7 +6,9 @@
 
     <h1 ID="main-text">{{value: Title}}</h1>
 
-    <dot:RouteLink RouteName="page2" Text="page 2"></dot:RouteLink>
+    <p>We changed the color of main text in <b>default-script.js!</b></p>
+
+    <dot:RouteLink RouteName="page2" Text="page 2 link"></dot:RouteLink>
 </dot:Content>
 
 
